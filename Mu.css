@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+:root {
+    --mu-red: #DA291C;
+    --mu-black: #000000;
+    --mu-yellow: #FBE122;
+    --white: #ffffff;
+}
+
+header {
+    background-color: var(--mu-red);
+    color: var(--white);
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--mu-yellow);
+}
+
+.hero {
+    background-color: var(--mu-black);
+    color: var(--white);
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/4/43/Old_Trafford_inside_20060726_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: var(--mu-red);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    text-transform: uppercase;
+}
+
+.content-section {
+    padding: 40px;
+    background-color: var(--white);
+    margin: 80px auto; 
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.content-section h2 {
+    color: var(--mu-red);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--mu-black);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Gambar Stadion */
+.stadium-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Video Anthem */
+.anthem-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--mu-black);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--mu-black);
+    color: var(--white);
+}
