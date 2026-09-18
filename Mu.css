@@ -106,7 +106,6 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* Gambar Stadion */
 .stadium-img {
     width: 100%;
     height: auto;
@@ -115,7 +114,6 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Video Anthem */
 .anthem-title {
     margin-top: 30px;
     margin-bottom: 10px;
