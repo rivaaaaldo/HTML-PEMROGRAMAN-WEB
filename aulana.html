@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universitas Sultan Ageng Tirtayasa | UNTIRTA</title>
+    <!-- Tambahan wajib: Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="aulana.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-    <a href="#" class="logo">UN<span>TIRTA</span></a>
-    <ul>
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="index.html">Halaman Kolaborasi</a></li>
-        <li><a href="Mu.html">Halaman Rivaldo</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-    </ul>
-</nav>
-    </header>
+    <!-- Perbaikan Navbar menggunakan Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">UN<span style="color: #f7941d;">TIRTA</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Halaman Kolaborasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Mu.html">Halaman Rivaldo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- (Bagian Hero dan Tentang tetap sama, tidak perlu diubah) -->
     <section id="beranda" class="hero">
         <h1>Smart and Green University</h1>
         <p>Menjadi Universitas yang Unggul, Berkarakter, dan Berdaya Saing Global di Kawasan ASEAN.</p>
         <a href="#kampus" class="btn">Jelajahi Kampus</a>
     </section>
+    
     <section id="tentang" class="tentang-section">
         <h2 class="section-title">Tentang Universitas Sultan Ageng Tirtayasa</h2>
     </section>
+
     <section id="kampus" class="kampus-section">
         <h2 class="section-title">Lingkungan Akademik Kami</h2>
         
-        <div class="kampus-grid">
+        <!-- Perubahan nama class menjadi kampus-flex -->
+        <div class="kampus-flex">
             <div class="kampus-card">
                 <div class="card-img img-sindangsari"></div>
                 <div class="card-content">
@@ -44,7 +56,7 @@
                 <div class="card-img img-teknik"></div>
                 <div class="card-content">
                     <h3>Fakultas Teknik (Cilegon)</h3>
-                    <p>Terletak strategis di kota industri Cilegon. Pusat pencetakan insinyur masa depan dengan fasilitas laboratorium mutakhir dan ruang rekayasa teknologi terbaik.</p>
+                    <p>Terletak strategis di kota industri Cilegon. Pusat pencetakan insinyur masa depan dengan fasilitas laboratorium mutakhir.</p>
                 </div>
             </div>
             
@@ -59,13 +71,15 @@
     </section>
 
     <footer>
-    <p>&copy; 2026 Universitas Sultan Ageng Tirtayasa. All Rights Reserved.</p>
-    <div id="kontak" class="d-flex flex-column flex-md-row justify-content-center gap-2 gap-md-5 my-3">
-        <span>Phone : +62812345678910</span>
-        <span>Email : janedoe123@gmail.com</span>
-    </div>
-    <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.8;">Cilegon | Serang | Banten</p>
-</footer>
+        <p>&copy; 2026 Universitas Sultan Ageng Tirtayasa. All Rights Reserved.</p>
+        <div id="kontak" class="d-flex flex-column flex-md-row justify-content-center gap-2 gap-md-5 my-3">
+            <span>Phone : +62812345678910</span>
+            <span>Email : aulanaibrahimm@gmail.com</span>
+        </div>
+        <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.8;">Cilegon | Serang | Banten</p>
+    </footer>
 
+    <!-- Tambahan wajib: Script Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
